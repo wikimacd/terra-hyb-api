@@ -1,6 +1,4 @@
-# resource "kubernetes_manifest" "node_api_app" {
-#   manifest = yamldecode(file("${path.module}/app.yaml"))
-# }
+
 resource "kubernetes_manifest" "node_api_deployment" {
   manifest = yamldecode(file("${path.module}/deployment.yaml"))
 }
