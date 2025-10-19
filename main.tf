@@ -10,3 +10,5 @@ resource "kubernetes_manifest" "node_api_service" {
 resource "kubernetes_manifest" "node_api_ingress" {
   manifest = yamldecode(file("${path.module}/ingress.yaml"))
 }
+
+# comment added on line 14
